@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:layout_marginBottom="100dp"
+    android:id="@+id/measures_layout"
+    tools:context=".fragments.MeasuresFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="16dp"
+        android:text="@string/title_chart"
+        android:textSize="24sp" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:layout_above="@id/title2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="230dp" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/prevMeasures"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="16dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/title_chart2"
+        android:textSize="24sp" />
+
+    <GridLayout
+        android:id="@+id/prevMeasures"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:rowCount="1">
+
+        <TextView
+            android:id="@+id/txtTemperature"
+            android:layout_width="111dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="80sp" />
+
+        <ImageView
+            android:id="@+id/imgLine1"
+            android:layout_width="78dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_remove_60" />
+
+        <TextView
+            android:id="@+id/txtHumidity"
+            android:layout_width="111dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="80sp" />
+
+        <ImageView
+            android:id="@+id/imgLine2"
+            android:layout_width="78dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_remove_60" />
+
+    </GridLayout>
+
+</RelativeLayout>

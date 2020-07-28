@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EvaluacionFinal</string>
+    <string name="title_measures">Medidas</string>
+    <string name="title_leds">Leds</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_chart">Temperatura y Humedad</string>
+    <string name="title_chart2">Medidas previas</string>
+</resources>
